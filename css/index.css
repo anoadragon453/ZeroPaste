@@ -1,0 +1,18 @@
+h2 {
+    color: #EF2929; /* red */
+}
+
+button {
+    color: white;
+}
+
+textarea {
+    background-color: #232629;
+    color: white;
+    border: 0px;
+    padding: 2px;
+}
+
+textarea:focus {
+    box-shadow: 0 0 10px #719ECE;
+}

@@ -1,0 +1,38 @@
+{
+    "db_name": "zeropaste",
+    "db_file": "data/zeropaste.db",
+    "version": 2,
+    "maps": {
+        "users/.*/data.json": {
+            "to_table": [
+                {
+                    "node": "pastes",
+                    "table": "pastes"
+                }
+            ]
+        }
+    },
+    "tables": {
+        "json": {
+            "cols": [
+                ["json_id", "INTEGER PRIMARY KEY AUTOINCREMENT"],
+                ["directory", "TEXT"],
+                ["file_name", "TEXT"],
+                ["cert_user_id", "TEXT"]
+            ],
+            "indexes": ["CREATE UNIQUE INDEX path ON json (directory, file_name)"],
+            "schema_changed": 0
+        },
+        "pastes": {
+            "cols": [
+                ["id", "INTEGER"],
+                ["author", "TEXT"],
+                ["content", "TEXT"],
+                ["encrypted", "INTEGER"],
+                ["json_id", "INTEGER REFERENCES json (json_id)"]
+            ],
+            "indexes": ["CREATE UNIQUE INDEX _key ON pastes(id)"],
+            "schema_changed": 0
+        }
+    }
+}

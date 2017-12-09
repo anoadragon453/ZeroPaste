@@ -1,0 +1,22 @@
+{
+ "address": "13UPrK6VSjZ4NmYAjbeT8sU3mVkaxtFUvB",
+ "files": {},
+ "ignore": ".*",
+ "inner_path": "data/users/content.json",
+ "modified": 1502897426,
+ "signs": {},
+ "user_contents": {
+  "cert_signers": {
+   "zeroid.bit": ["1iD5ZQJMNXu43w1qLB8sfdHVKppVMduGz"]
+  },
+  "permission_rules": {
+   ".*": {
+    "files_allowed": "data.json",
+    "max_size": 10000
+   }
+  },
+  "permissions": {
+   "herp@zeroid.bit": {"max_size": 100000}
+  }
+ }
+}

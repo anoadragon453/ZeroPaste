@@ -1,0 +1,78 @@
+{
+ "address": "13UPrK6VSjZ4NmYAjbeT8sU3mVkaxtFUvB",
+ "address_index": 98453232,
+ "background-color": "#31363B",
+ "clone_root": "template-new",
+ "cloned_from": "1HeLLo4uzjaLetFx6NH3PMwFP3qbRbTf3D",
+ "description": "ZeroNet Pastebin",
+ "files": {
+  "css/index.css": {
+   "sha512": "1ff2c3254df9c8aa27cd21abbb8bed77f4028373ef5f2fb6691f3b776fa1f20d",
+   "size": 219
+  },
+  "dbschema.json": {
+   "sha512": "07ce6c238fbf07f925a732389a6f8f8e0cb071a7be48c81473fc173b4306a2ef",
+   "size": 1075
+  },
+  "index.html": {
+   "sha512": "ba80880a0c69b63a09f07da4fd2b60f0f2fe801043a04fc67a12d3a80e90911d",
+   "size": 1069
+  },
+  "js/ZeroFrame.js": {
+   "sha512": "5cdf4ca261df28bbc2954dde1ed7ba2a554389a8beb9c0607780b6c3090d499d",
+   "size": 3396
+  },
+  "js/ZeroLib/ZeroAuth.js": {
+   "sha512": "0778eea5e329d0f209ce9518d437e801b3c1ed2d1f2de9e4da01591fab7e02e2",
+   "size": 2093
+  },
+  "js/ZeroLib/ZeroDB.js": {
+   "sha512": "a242ff99eb0cb8f0f44c9770a7ce3b0a887df342b7bdabb2a580b09bcd8f0577",
+   "size": 4025
+  },
+  "js/ZeroLib/ZeroFS.js": {
+   "sha512": "f18c1ec42ff1f58a6a047a3ce806d57f5f32b950b7161396108c8d3c573e703e",
+   "size": 3499
+  },
+  "js/ZeroLib/ZeroFrame.js": {
+   "sha512": "090a43d18dcd1aa836b0d160631fe958f9fabd761af712e8eed6f7e010c0dd76",
+   "size": 2409
+  },
+  "js/ZeroLib/ZeroOptional.js": {
+   "sha512": "1d228d1a08ce7a31baa6f0b1e50a12ca216b116b37f87a3fdbf27d0736e715cf",
+   "size": 3690
+  },
+  "js/ZeroLib/ZeroOptionalProxy.js": {
+   "sha512": "e5342475b7efd86f7faf6f381f3e721e31ef40159b8219fe416eace74513afb8",
+   "size": 1540
+  },
+  "js/ZeroLib/ZeroPage.js": {
+   "sha512": "06ce839b051ad2b634001b5691d25a34af7bb3aecffc1adff41db1f799d18417",
+   "size": 7783
+  },
+  "js/index.js": {
+   "sha512": "bf5bb5f347401517502c1c8d7698c2e8c2c7744afacf26e2a58b729804b80ba6",
+   "size": 119
+  },
+  "js/paste.js": {
+   "sha512": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce",
+   "size": 0
+  },
+  "js/vue.js": {
+   "sha512": "1218315c40027ba269d07dd31d82215ba49f10e41d9a21f84eb0c609cd2b1afb",
+   "size": 284067
+  }
+ },
+ "ignore": "data/users/.*",
+ "inner_path": "content.json",
+ "modified": 1512861293,
+ "postmessage_nonce_security": true,
+ "signers_sign": "G2Jwseh0+5nffoBTVYaHHHHAG8LFVCVl+HsBM0CMurmWFXEtV8VHDgJORc/jZnVtOC7YGkFduKSEe0wDoljB6NA=",
+ "signs": {
+  "13UPrK6VSjZ4NmYAjbeT8sU3mVkaxtFUvB": "HNkXgRIRaeAXha0BFEsdP+UrECavluI9lPXC2eKPRUTvWLkP5AijKnGt0Qhpe1xmbP7ZbyQ9+oLAXgRCcrPcndE="
+ },
+ "signs_required": 1,
+ "title": "ZeroPaste",
+ "translate": ["js/all.js"],
+ "zeronet_version": "0.6.0"
+}

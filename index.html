@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+ <title>ZeroPaste</title>
+ <meta charset="utf-8">
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="css/index.css">
+ <base href="" target="_top" id="base">
+ <script>base.href = document.location.href.replace("/media", "").replace("index.html", "").replace(/[&?]wrapper=False/, "").replace(/[&?]wrapper_nonce=[A-Za-z0-9]+/, "")</script>
+</head>
+<body>
+    <h2>ZeroPaste</h2>
+
+    <textarea id="paste-area" rows="4" cols="50" placeholder="Type your content here..."></textarea>
+    <hr>
+    <button onclick="buttonPressed" type="button">Save!</button>
+
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="js/ZeroLib/ZeroFrame.js"></script>
+    <script type="text/javascript" src="js/ZeroLib/ZeroPage.js"></script>
+    <script type="text/javascript" src="js/ZeroLib/ZeroAuth.js"></script>
+    <script type="text/javascript" src="js/ZeroLib/ZeroFS.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
