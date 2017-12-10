@@ -1,18 +1,36 @@
 h2 {
     color: #EF2929; /* red */
+    text-align: center;
 }
 
 button {
     color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-bottom: none;
 }
 
 textarea {
+    display: block;
+    width: 1280px;
+    height: 480px;
+    margin: 5px 20px 5px 0;
     background-color: #232629;
     color: white;
     border: 0px;
     padding: 2px;
+    margin-top: 0;
 }
-
 textarea:focus {
     box-shadow: 0 0 10px #719ECE;
+}
+
+button, textarea {
+    margin-left: 30px;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
 }
