@@ -13,10 +13,13 @@
 <body>
     <h2>ZeroPaste</h2>
 
-    <textarea id="paste-area" rows="4" cols="50" placeholder="Type your content here..."></textarea>
-    <hr>
+    <!-- archangel45: Button and checkbox could be here instead at the bottom
+    but it might be changed in future commits. -->
     <button onclick="createNewPaste" type="button">Paste!</button>
     <input type="checkbox" name="encrypted" value="encrypted"> Encrypted
+
+    <textarea id="paste-area" placeholder="Type your content here..."></textarea>
+    <hr>
 
     <script type="text/javascript" src="js/vue.js"></script>
     <script type="text/javascript" src="js/ZeroLib/ZeroFrame.js"></script>
