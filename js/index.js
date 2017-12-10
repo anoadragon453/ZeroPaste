@@ -1,5 +1,5 @@
 // Gets a parameter from the URL
-// i.e. p <- http://127.0.0.1:43110/site.bit?p=hello
+// i.e. ('p') http://127.0.0.1:43110/site.bit?p=hello -> hello
 function getURLParameter(name) {
   return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
 }
