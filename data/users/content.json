@@ -3,8 +3,10 @@
  "files": {},
  "ignore": ".*",
  "inner_path": "data/users/content.json",
- "modified": 1502897426,
- "signs": {},
+ "modified": 1512901959,
+ "signs": {
+  "13UPrK6VSjZ4NmYAjbeT8sU3mVkaxtFUvB": "GzjCEf8eJ8JSYcAusMRqt9+xVLYOeBZbBGunEVSdBSl5MVTZ4xrQRn+ATHyBHhx6IGwkIy+A+jvXhBXDUkM7FzM="
+ },
  "user_contents": {
   "cert_signers": {
    "zeroid.bit": ["1iD5ZQJMNXu43w1qLB8sfdHVKppVMduGz"]
