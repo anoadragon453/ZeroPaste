@@ -91,5 +91,7 @@ function createNewPaste() {
 
 // Load the supplied pasteID from the DB (if it exists)
 function loadPaste(id) {
+    console.log("Requesting paste: " + id);
 
+    zeroQuery("SELECT content, encrypted FROM pastes WHERE id = " + id);
 }
