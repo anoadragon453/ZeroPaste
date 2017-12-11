@@ -8,7 +8,6 @@ function getURLParameter(name) {
 // Paste IDs can be supplied in the URL with the 'p' param
 var pasteID = getURLParameter('p');
 if(pasteID) {
-    console.log("Loading paste ID: " + pasteID);
     loadPaste(pasteID)
         .then(paste_data => {
             // Check we actually got content back

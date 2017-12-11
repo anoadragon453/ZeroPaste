@@ -90,7 +90,7 @@ function createNewPaste() {
         })
         .then(() => {
             // Change the URL to include the new paste ID
-            window.location.href = "/13UPrK6VSjZ4NmYAjbeT8sU3mVkaxtFUvB/?p=" + paste_id + "@" + user_id;
+            window.location.href = window.location.href.split('?')[0] + "?p=" + paste_id + "@" + user_id;
         });
 }
 
@@ -111,7 +111,6 @@ function loadPaste(id) {
             }
 
             var paste_content = results[0].content;
-            console.log(paste_content);
             if (results[0].encrypted) {
                 console.log("Content is encrypted.");
 
