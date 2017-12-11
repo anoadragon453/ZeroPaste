@@ -14,17 +14,20 @@
 
     <!-- archangel45: Button and checkbox could be here instead at the bottom
     but it might be changed in future commits. -->
-    <button onclick="createNewPaste()" type="button">Paste!</button>
-    <input id="encryption-checkbox" type="checkbox" name="encrypted" value="encrypted"> Encrypted
+    <button id="paste-button" onclick="createNewPaste()" type="button">Paste!</button>
+    <span id="encryption-div">
+        <input id="encryption-checkbox" type="checkbox" name="encrypted" value="encrypted"> Encrypted
+    </span>
+    <span id="paste-author"></span>
 
     <textarea id="paste-area" placeholder="Type your content here..."></textarea>
-    <hr>
 
     <script type="text/javascript" src="js/vue.js"></script>
     <script type="text/javascript" src="js/ZeroLib/ZeroFrame.js"></script>
     <script type="text/javascript" src="js/ZeroLib/ZeroPage.js"></script>
     <script type="text/javascript" src="js/ZeroLib/ZeroAuth.js"></script>
     <script type="text/javascript" src="js/ZeroLib/ZeroFS.js"></script>
+    <script type="text/javascript" src="js/ZeroLib/ZeroDB.js"></script>
     <script type="text/javascript" src="js/globals.js"></script>
     <script type="text/javascript" src="js/paste.js"></script>
     <script type="text/javascript" src="js/index.js"></script>

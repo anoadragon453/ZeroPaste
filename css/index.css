@@ -20,6 +20,7 @@ textarea {
     border: 0px;
     padding: 2px;
     margin-top: 0;
+    resize: vertical;
 }
 textarea:focus {
     box-shadow: 0 0 10px #719ECE;
@@ -34,4 +35,9 @@ button:hover {
     background-color: white;
     border: 1px solid black;
     border-bottom: none;
+}
+
+#paste-author {
+    float: right;
+    padding-right: 3em;
 }

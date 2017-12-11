@@ -65,27 +65,32 @@ function createNewPaste() {
 
     // Get the user's info
     // Pop up the address notification if not already signed in
-    let address, user_id;
+    let address, user_id, paste_id;
     zeroAuth.requestAuth()
         .then(auth => {
             // Once we've got the auth, extract the address and username
             address = auth.address;
-            user_id = auth.cert_user_id;
+            user_id = auth.user;
 
             // Now get the user's data
             return getUserData(auth.address);
         })
         .then(userData => {
             // Insert the paste
+            paste_id = userData.next_paste_id++; // Gets next user-specific paste id and increments
             userData.pastes.push({
-                id: userData.next_paste_id++, // Gets next user-specific paste id and increments
-                author: user_id,              // The current user's public address
+                id: paste_id,                 // Incremented id
+                author: user_id,              // The current user's user name
                 content: pasteContent,        // The content of the paste
                 encrypted: isEncrypted        // Set whether the paste is encrypted
             });
 
             // Push the updated paste content into the user's data.json
-            saveUserData(address, userData);
+            return saveUserData(address, userData);
+        })
+        .then(() => {
+            // Change the URL to include the new paste ID
+            window.location.href = "/13UPrK6VSjZ4NmYAjbeT8sU3mVkaxtFUvB/?p=" + paste_id + "@" + user_id;
         });
 }
 
@@ -93,5 +98,26 @@ function createNewPaste() {
 function loadPaste(id) {
     console.log("Requesting paste: " + id);
 
-    zeroQuery("SELECT content, encrypted FROM pastes WHERE id = " + id);
+    // Grab the author and paste_id from the provided "paste_id@author" id string
+    var paste_id = id.split(/(.+)@.+@/)[1]; // Grab everything before the first '@'
+    var author = id.split(/@(.+)/)[1]; // Grab everything after the first '@'
+
+    // Query the requested paste from the database
+    return zeroDB.query("SELECT content, encrypted FROM pastes WHERE author = '" + author + "' AND id = " + paste_id)
+        .then(results => {
+            if (results.length == 0) {
+                console.log("Paste not found");
+                return "";
+            }
+
+            var paste_content = results[0].content;
+            console.log(paste_content);
+            if (results[0].encrypted) {
+                console.log("Content is encrypted.");
+
+                // Decrypt contents
+            }
+
+            return [author, paste_content];
+        });
 }
