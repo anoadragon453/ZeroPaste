@@ -1,7 +1,6 @@
 {
  "address": "13UPrK6VSjZ4NmYAjbeT8sU3mVkaxtFUvB",
  "address_index": 98453232,
- "background-color": "#31363B",
  "clone_root": "template-new",
  "cloned_from": "1HeLLo4uzjaLetFx6NH3PMwFP3qbRbTf3D",
  "description": "ZeroNet Pastebin",
@@ -12,8 +11,8 @@
    "size": 154
   },
   "css/index.css": {
-   "sha512": "9e4d847d989b85e9e69d6839785c4fce6a45b8c7b81e7a9aa4b91608dde59d4b",
-   "size": 672
+   "sha512": "7ec4060ea4099c1e978567b46c375fdbd9eeadfa00f7b9946ca9b69b3bae66f8",
+   "size": 741
   },
   "dbschema.json": {
    "sha512": "e44ac0353f9c65eebbb31dd5f8014b171a2ac6e565823b0f0ff2921190709b88",
@@ -80,11 +79,11 @@
   }
  },
  "inner_path": "content.json",
- "modified": 1512985155,
+ "modified": 1513064701,
  "postmessage_nonce_security": true,
  "signers_sign": "G2Jwseh0+5nffoBTVYaHHHHAG8LFVCVl+HsBM0CMurmWFXEtV8VHDgJORc/jZnVtOC7YGkFduKSEe0wDoljB6NA=",
  "signs": {
-  "13UPrK6VSjZ4NmYAjbeT8sU3mVkaxtFUvB": "G2H1tFAvK4DIoEf/FICmNoSpz/My/up2/IL0DM4+vu5XUbe+1x1tBILFXRCXqqsESzN2N9jSFJI3olQM8TOZ9tw="
+  "13UPrK6VSjZ4NmYAjbeT8sU3mVkaxtFUvB": "HKF5vfQO7NeQJ9PpDqr8fwDORfhnwZCTVBh4RFuX0QKieWn6RM1Itqe7MN0iCRZUJr5kZd5j9WFf9CdRPcJe6dc="
  },
  "signs_required": 1,
  "title": "ZeroPaste",
