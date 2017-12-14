@@ -10,17 +10,49 @@
    "sha512": "b63a8010c25b14402ffd275838124a2e64046e209bb84b4b0e4e580a094d1366",
    "size": 154
   },
+  "css/buefy.css": {
+   "sha512": "f402a2fb38a631b119b66f323a999e1df8305af41896e81010f992ea9595f55f",
+   "size": 225565
+  },
   "css/index.css": {
-   "sha512": "7ec4060ea4099c1e978567b46c375fdbd9eeadfa00f7b9946ca9b69b3bae66f8",
-   "size": 741
+   "sha512": "45dac37e80915ba3af4f8b3f2fc5bb885d1a04b5346b8ad86d93aa56503f7623",
+   "size": 654
+  },
+  "css/materialdesignicons.min.css": {
+   "sha512": "33aaff36fca502299644ad4cc530596cfac0c38e6fac6268f2814da231387021",
+   "size": 90082
+  },
+  "css/materialdesignicons.min.css.map": {
+   "sha512": "8e0c607aef95a86a21d61759485d796b4a8c884c1f6e15d32d91d2df9cf5b935",
+   "size": 73872
   },
   "dbschema.json": {
    "sha512": "e44ac0353f9c65eebbb31dd5f8014b171a2ac6e565823b0f0ff2921190709b88",
    "size": 1077
   },
+  "fonts/materialdesignicons-webfont.eot": {
+   "sha512": "5220bc7ee9a3df8bc4638878d063266a7ebeddaddb025c5ac7e80d011cd20e93",
+   "size": 303160
+  },
+  "fonts/materialdesignicons-webfont.svg": {
+   "sha512": "4dbf9483be16dc6ef72814aab391ce9fa2149e8ebecb91a56b2235e08df037e7",
+   "size": 2299872
+  },
+  "fonts/materialdesignicons-webfont.ttf": {
+   "sha512": "0f51b925e085d8b75f7ff17d3616239ac23ea23e1d0a483e4c66da60638704bf",
+   "size": 302940
+  },
+  "fonts/materialdesignicons-webfont.woff": {
+   "sha512": "56a5e0eb10c0dbc615646f955cf75f6dd05b08a0ca53831fbdc8af73b0d61ae8",
+   "size": 148792
+  },
+  "fonts/materialdesignicons-webfont.woff2": {
+   "sha512": "1c1c2b91961fb81e060bc5167a2199a6f835947f78e9287625dd1842c1c1f959",
+   "size": 112468
+  },
   "index.html": {
-   "sha512": "5b835862e1c601b509427154ea6407f7e79f512c277610872c17c5abdd744d15",
-   "size": 1573
+   "sha512": "33772146807f7d9a3ee1d81282ac438ecbd54311e5647f88ba21ca8012c748a3",
+   "size": 2712
   },
   "js/ZeroFrame.js": {
    "sha512": "5cdf4ca261df28bbc2954dde1ed7ba2a554389a8beb9c0607780b6c3090d499d",
@@ -54,17 +86,25 @@
    "sha512": "06ce839b051ad2b634001b5691d25a34af7bb3aecffc1adff41db1f799d18417",
    "size": 7783
   },
+  "js/buefy.js": {
+   "sha512": "cb15345c010def5d9509e2c86ed1340a26517eef176e9a76f635eb113b0edcfb",
+   "size": 181332
+  },
   "js/globals.js": {
    "sha512": "ce2f170073b32b611b8ca82e481e31678fbe4a368b3ea43c8d7aced25de4175e",
    "size": 197
   },
   "js/index.js": {
-   "sha512": "34d372add35d45ed59025340113b631a2079e8907e31d8f718441f18bffd87b4",
-   "size": 1940
+   "sha512": "2587ddcc26c6b7627424ce9dc9db3e80df13ad7048751af4293e5f426beec6dc",
+   "size": 2407
   },
   "js/paste.js": {
-   "sha512": "72b53a9641b6fd33f6af478997b2e5ff4d3027ff3f473f458919fd15e28420f1",
-   "size": 4458
+   "sha512": "0906dcf104f9a64f461c6983091575a683dc0e1180cbe7500cb501e44b7e4e86",
+   "size": 4418
+  },
+  "js/vue-components/LinkModal.js": {
+   "sha512": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce",
+   "size": 0
   },
   "js/vue.js": {
    "sha512": "1218315c40027ba269d07dd31d82215ba49f10e41d9a21f84eb0c609cd2b1afb",
@@ -79,11 +119,11 @@
   }
  },
  "inner_path": "content.json",
- "modified": 1513064701,
+ "modified": 1513246294,
  "postmessage_nonce_security": true,
  "signers_sign": "G2Jwseh0+5nffoBTVYaHHHHAG8LFVCVl+HsBM0CMurmWFXEtV8VHDgJORc/jZnVtOC7YGkFduKSEe0wDoljB6NA=",
  "signs": {
-  "13UPrK6VSjZ4NmYAjbeT8sU3mVkaxtFUvB": "HKF5vfQO7NeQJ9PpDqr8fwDORfhnwZCTVBh4RFuX0QKieWn6RM1Itqe7MN0iCRZUJr5kZd5j9WFf9CdRPcJe6dc="
+  "13UPrK6VSjZ4NmYAjbeT8sU3mVkaxtFUvB": "Gw2JARyGBN1+AyfqQgCzPhJbCyEYaxfsibBJoypkDVOMV4HxiI80DpTLWQgKwyhqwOiFOJ4sTVox3WGjxO8i+UY="
  },
  "signs_required": 1,
  "title": "ZeroPaste",

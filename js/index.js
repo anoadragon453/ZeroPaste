@@ -1,7 +1,32 @@
+Vue.use(Buefy.default)
+
+var App = new Vue({
+    el: "#app",
+    data: {
+        encrypted: true
+    },
+    methods: {
+        toggleEncrypted: function() {
+            // Toggle encryption
+            this.encrypted = !this.encrypted;
+        },
+        paste: function() {
+            createNewPaste();
+        }
+    }
+});
+
 // Gets a parameter from the URL
 // i.e. ('p') http://127.0.0.1:43110/site.bit?p=hello -> hello
 function getURLParameter(name) {
   return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+}
+
+// Check if we're coming from a new paste
+var newPaste = getURLParameter('n');
+if(newPaste) {
+    // Pop up a modal giving the paste link
+
 }
 
 // Check if the user supplied a paste

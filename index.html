@@ -5,24 +5,53 @@
  <title>ZeroPaste</title>
  <meta charset="utf-8">
  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="css/materialdesignicons.min.css">
+ <link rel="stylesheet" href="css/buefy.css">
  <link rel="stylesheet" href="css/index.css">
  <base href="" target="_top" id="base">
  <script>base.href = document.location.href.replace("/media", "").replace("index.html", "").replace(/[&?]wrapper=False/, "").replace(/[&?]wrapper_nonce=[A-Za-z0-9]+/, "")</script>
 </head>
 <body>
-    <h2>ZeroPaste</h2>
+    <div id="app">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <b>ZeroPaste</b>
+                </a>
+
+            </div>
+
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a v-bind:class="encrypted ? 'is-success' : 'is-danger'"
+                                @click="toggleEncrypted" class="button">
+                            <b-icon v-if="encrypted" icon="check"></b-icon>
+                            <b-icon v-else icon="close"></b-icon>
+                            <span>{{ encrypted ? "Encryption" : "No encryption" }}</span>
+                        </a>
+                    </div>
+                    <div class="navbar-item">
+                        <a @click="paste" class="button is-primary">Paste</a>
+                    </div>
+
+                    <!-- Make room for the ZeroNet popover -->
+                    <div class="navbar-item"></div>
+                    <div class="navbar-item"></div>
+                </div>
+            </div>
+        </nav>
+
+        <textarea id="paste-area" placeholder="Type your content here..."></textarea>
+    </div>
+
 
     <!-- archangel45: Button and checkbox could be here instead at the bottom
     but it might be changed in future commits. -->
-    <button id="paste-button" onclick="createNewPaste()" type="button">Paste!</button>
-    <span id="encryption-div">
-        <input id="encryption-checkbox" type="checkbox" name="encrypted" value="encrypted"> Encrypted
-    </span>
     <span id="paste-author"></span>
 
-    <textarea id="paste-area" placeholder="Type your content here..."></textarea>
-
     <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="js/buefy.js"></script>
     <script type="text/javascript" src="js/ZeroLib/ZeroFrame.js"></script>
     <script type="text/javascript" src="js/ZeroLib/ZeroPage.js"></script>
     <script type="text/javascript" src="js/ZeroLib/ZeroAuth.js"></script>

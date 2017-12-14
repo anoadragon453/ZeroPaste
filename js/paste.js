@@ -54,7 +54,7 @@ function createNewPaste() {
     pasteContent = document.getElementById("paste-area").value;
 
     // Check if encryption is enabled
-    var isEncrypted = document.getElementById('encryption-checkbox').checked;
+    var isEncrypted = App.encryption;
     if(isEncrypted) {
         console.log("Encrypting paste");
 
